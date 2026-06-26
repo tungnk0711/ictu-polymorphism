@@ -1,25 +1,27 @@
 public class ApprovalPayment {
-    /*public void approval(PaymentObject paymentObject, int amount){
-        if(paymentObject.isPay(amount)){
-            System.out.println("Approval.");
-        }
-    }*/
 
-    /*public void approval1(CardPayment cardPayment, int amount) {
+    /*public void approvalCardPayment(CardPayment cardPayment, int amount) {
         if (cardPayment.isPay(amount)) {
             System.out.println("Approval.");
         }
     }
 
-    public void approval2(CashPayment cashPayment, int amount) {
+    public void approvalCashPayment(CashPayment cashPayment, int amount) {
         if (cashPayment.isPay(amount)) {
+            System.out.println("Approval.");
+        }
+    }
+
+    public void approvalEWalletPayment(EWalletPayment eWalletPayment, int amount) {
+        if (eWalletPayment.isPay(amount)) {
             System.out.println("Approval.");
         }
     }*/
 
-    public void approval(PaymentObject paymentObject, int amount) {
+    public void approvalPayment(PaymentObject paymentObject, int amount) {
         if (paymentObject.isPay(amount)) {
             System.out.println("Approval.");
         }
     }
+
 }
